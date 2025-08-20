@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Movie Financial Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .chart-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Superhero Movie Financial Analysis</h1>
+            <p class="text-lg md:text-xl">Interactive data visualizations exploring various financials for the live action Superhero Genre (2025 USD)</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Project Overview -->
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-semibold mb-4">Project Overview</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+                This project analyzes superhero movie financials across MCU, DC, FOX, and SONY franchises, using inflation-adjusted data (base year: 2025). Built with Python, Pandas, and Plotly, it features interactive charts to explore revenue trends, profitability, ROI, and budget breakdowns. Click below to view the visualizations.
+            </p>
+        </section>
+
+        <!-- Chart Links -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <a href="EstimatedSuperheroMovieBoxOfficeandBudgets.html" class="chart-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-600">Box Office and Budgets</h3>
+                <p class="text-gray-600">Break down domestic, international, and worldwide box office with budgets.</p>
+            </a>
+            <a href="EstimatedSuperheroMovieRevenueandBudgets.html" class="chart-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-600">Revenue and Budgets</h3>
+                <p class="text-gray-600">Compare inflation-adjusted total revenue and budgets across superhero franchises.</p>
+            </a>
+            <a href="EstimatedSuperheroMovieProfit.html" class="chart-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-600">Profit</h3>
+                <p class="text-gray-600">Analyze inflation-adjusted profits, including domestic and international shares.</p>
+            </a>
+            <a href="EstimatedSuperheroMovieROI.html" class="chart-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-600">Return on Investment (ROI)</h3>
+                <p class="text-gray-600">Explore ROI percentages and audience engagement metrics over time.</p>
+            </a>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Technical Details</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><strong>Data Source</strong>: superhero_box_office.xlsx (included in repository) collated from <a href="https://www.the-numbers.com/" class="underline hover:text-blue-300">The Numbers</a></li>
+                <li><strong>Technologies</strong>: Python, Pandas (data processing), Plotly (interactive visualizations)</li>
+                <li><strong>Methodology</strong>: Adjusted financials using U.S. CPI data (1989–2025) for inflation to 2025 USD</li>
+                <li><strong>Features</strong>: Interactive dropdowns for franchise/series selection, hover details, and stacked bar charts</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>Licensed under <a href="LICENSE" class="underline hover:text-blue-300">Creative Commons Attribution-NonCommercial 4.0</a>. Please cite this repository for non-commercial use.</p>
+            <p class="mt-2">Created by Marcus Wesley | <a href="https://www.linkedin.com/in/marcus-wesley15/" class="underline hover:text-blue-300">LinkedIn</a> | <a href="mailto:marcuswesley15@gmail.com" class="underline hover:text-blue-300">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>
